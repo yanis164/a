@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio - Alexandre Martin</title>
+    <link rel="stylesheet" href="style.css" />
+    <script type="module">
+        import { createIcons, icons } from 'https://esm.sh/lucide';
+
+        createIcons({ icons });
+    </script>
+</head>
+
+<body>
+    <header>
+        <div class="logo">A<span>.</span></div>
+
+        <nav>
+            <a href="#home">Accueil</a>
+            <a href="#about">À propos</a>
+            <a href="#skills">Compétences</a>
+            <a href="#projects">Projets</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <section class="hero" id="home">
+        <div class="hero-text">
+            <p class="hello">Salut, je suis</p>
+            <h1>Alexandre Martin</h1>
+            <p class="subtitle">Étudiant passionné par le développement web &lt;/&gt;</p>
+            <p class="description">
+                Je crée des interfaces simples, modernes et efficaces avec HTML et CSS.
+                Découvrez mes projets et n’hésitez pas à me contacter !
+            </p>
+            <a href="CV.pdf" target="_blank" class="btn"><i data-lucide="download"></i>
+                Voir mon CV</a>
+        </div>
+
+        <div class="hero-image">
+            <img src="illustration.png" alt="Illustration développeur">
+        </div>
+    </section>
+
+    <section id="about" class="light about">
+        <div class="circle-icon"> <i data-lucide="user-round"></i>
+        </div>
+
+        <div>
+            <h2>À propos</h2>
+            <p>
+                Je suis étudiant en seconde et je m’intéresse particulièrement au
+                développement web. J’aime apprendre, relever des défis et concevoir
+                des projets qui allient esthétique et fonctionnalité.
+            </p>
+        </div>
+
+        <div class="separator"></div>
+
+        <div class="info">
+            <p>📅 16 ans</p>
+            <p>📍 Lyon, France</p>
+            <p>✉️ alexandre.martin@email.com</p>
+        </div>
+    </section>
+
+    <section id="skills">
+        <h2 class="title-center">Compétences</h2>
+
+        <div class="skills">
+            <div class="skill">
+                <div class="circle-icon"><i data-lucide="file-code-2"></i>
+                </div>
+                <div>
+                    <h3>HTML</h3>
+                    <p>Structurer le contenu d’une page web.</p>
+                </div>
+            </div>
+
+            <div class="skill">
+                <div class="circle-icon"><i data-lucide="paintbrush"></i></div>
+                <div>
+                    <h3>CSS</h3>
+                    <p>Mettre en forme et styliser des pages web.</p>
+                </div>
+            </div>
+
+            <div class="skill">
+                <div class="circle-icon"><i data-lucide="smartphone"></i></div>
+                <div>
+                    <h3>Responsive</h3>
+                    <p>Adapter les sites web à tous les écrans.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="light">
+        <h2 class="title-center">Projets</h2>
+
+        <div class="projects">
+            <div class="card">
+                <div class="project-icon"><i data-lucide="house"></i></div>
+                <h3>Page d’accueil</h3>
+                <p>Une page d’accueil simple réalisée en HTML et CSS.</p>
+                <a href="#">Voir le projet <i data-lucide="arrow-right"></i></a>
+            </div>
+
+            <div class="card">
+                <div class="project-icon"><i data-lucide="id-card"></i></div>
+                <h3>Carte de profil</h3>
+                <p>Une carte de présentation responsive et épurée.</p>
+                <a href="#">Voir le projet <i data-lucide="arrow-right"></i></a>
+            </div>
+
+            <div class="card">
+                <div class="project-icon"><i data-lucide="images"></i></div>
+                <h3>Galerie d’images</h3>
+                <p>Une galerie responsive avec une mise en page en grille.</p>
+                <a href="#">Voir le projet <i data-lucide="arrow-right"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="contact-left">
+            <div class="circle-icon"><i data-lucide="contact-round"></i></div>
+            <div>
+                <h2>Contact</h2>
+                <p>
+                    Vous avez une question ou un projet en tête ?<br />
+                    N’hésitez pas à me contacter !
+                </p>
+            </div>
+        </div>
+
+        <a href="mailto:alexandre.martin@email.com" class="btn-outline">
+            <i data-lucide="mail"></i> Me contacter
+        </a>
+    </section>
+
+    <footer>
+        © 2024 Alexandre Martin — Tous droits réservés.
+    </footer>
+</body>
+
+</html>
